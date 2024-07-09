@@ -136,6 +136,10 @@ export type { NetworkId } from './mina-signer/mina-signer.js';
 
 export { setNumberOfWorkers } from './lib/proof-system/workers.js';
 
+// Internals
+import { exists } from './lib/provable/core/exists.js';
+export { exists };
+
 // experimental APIs
 import { memoizeWitness } from './lib/provable/provable.js';
 import * as OffchainState_ from './lib/mina/actions/offchain-state.js';
